@@ -1,0 +1,70 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "airbnb",
+    "airbnb-typescript",
+    "plugin:react/recommended",
+    "plugin:import/typescript",
+    "plugin:prettier/recommended",
+    "plugin:react-hooks/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  "plugins": [
+    "react",
+    "jsx-a11y",
+    "@typescript-eslint",
+    "prettier",
+    "react-hooks"
+  ],
+  "rules": {
+    "no-promise-executor-return": ["off"],
+    "@typescript-eslint/no-shadow": ["off"],
+    "consistent-return": ["off"],
+    "react/button-has-type": ["off"],
+    "no-param-reassign": ["off"],
+    "import/no-cycle": ["off"],
+    "jsx-a11y/label-has-associated-control": [
+      2,
+      { "controlComponents": ["Checkbox"] }
+    ],
+    "jsx-a11y/no-static-element-interactions": ["off"],
+    "jsx-a11y/click-events-have-key-events": ["off"],
+    "jsx-a11y/no-autofocus": ["off"],
+    "react/require-default-props": ["off"],
+    "import/prefer-default-export": ["off"],
+    "react/function-component-definition": ["off"],
+    "import/no-extraneous-dependencies": ["off"],
+    "react/react-in-jsx-scope": ["off"],
+    "react/jsx-uses-react": ["off"],
+    "react/jsx-props-no-spreading": ["warn"],
+    "react/no-unescaped-entities": ["off"],
+    "no-nested-ternary": ["off"],
+    "prettier/prettier": [
+      "warn",
+      {
+        "endOfLine": "auto"
+      }
+    ]
+  },
+  "settings": {
+    "import/resolver": {
+      "typescript": {
+        "alwaysTryTypes": true
+      }
+    },
+    "react": {
+      "version": "detect"
+    }
+  }
+}

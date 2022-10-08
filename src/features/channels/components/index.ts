@@ -1,0 +1,6 @@
+export { default as ChannelsSidebar } from "@/features/channels/components/ChannelsSidebar/ChannelsSidebar"
+export { default as SidebarHeading } from "@/features/channels/components/ChannelsSidebar/SidebarHeading"
+export { default as ChannelLabel } from "@/features/channels/components/CollapsibleSection/ChannelLabel"
+export { default as CollapsibleSection } from "@/features/channels/components/CollapsibleSection/CollapsibleSection"
+export { default as ManageChannelModal } from "@/features/channels/components/ManageChannelModal/ManageChannelModal"
+export type { ManageChannelModalProps } from "@/features/channels/components/ManageChannelModal/ManageChannelModal"
