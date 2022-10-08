@@ -63,7 +63,8 @@ const RootModals: React.FC = () => {
   return (
     <>
       {(Object.keys(openedModals) as ModalComponentsKeys[]).map((modalKey) => {
-        const Component = modalsComponents[modalKey]
+        // [To Do] Fix typesafe
+        const Component = modalsComponents[modalKey] as any
         const props = openedModals[modalKey] as ComponentProps<typeof Component>
         return <Component key={modalKey} {...props} />
       })}

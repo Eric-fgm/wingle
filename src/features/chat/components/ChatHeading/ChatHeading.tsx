@@ -4,7 +4,7 @@ import React from "react"
 export interface ChatHeadingProps {
   title: string
   subtitle: string
-  icon: React.FC<React.SVGProps<SVGSVGElement>> | React.ReactNode
+  icon: React.FC<React.SVGProps<SVGSVGElement>>
 }
 
 const ChatHeading: React.FC<ChatHeadingProps> = ({
